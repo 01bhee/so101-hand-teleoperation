@@ -1,0 +1,4 @@
+mujoco
+mediapipe
+opencv-contrib-python
+numpy

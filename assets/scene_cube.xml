@@ -1,0 +1,20 @@
+<mujoco model="scene_cube">
+  <include file="scene.xml"/>
+
+  <worldbody>
+    <!-- table: top surface at z = 0.06 -->
+        <body name="table" pos="0.30 0 0">
+      <geom name="table_top" type="box" pos="0 0 0.09" size="0.10 0.15 0.01" rgba="0.55 0.40 0.25 1"/>
+      <geom type="box" pos=" 0.09  0.14 0.04" size="0.01 0.01 0.04" rgba="0.4 0.3 0.2 1"/>
+      <geom type="box" pos="-0.09  0.14 0.04" size="0.01 0.01 0.04" rgba="0.4 0.3 0.2 1"/>
+      <geom type="box" pos=" 0.09 -0.14 0.04" size="0.01 0.01 0.04" rgba="0.4 0.3 0.2 1"/>
+      <geom type="box" pos="-0.09 -0.14 0.04" size="0.01 0.01 0.04" rgba="0.4 0.3 0.2 1"/>
+    </body>
+
+    <body name="cube" pos="0.30 0 0.115">
+      <freejoint/>
+      <geom name="cube_geom" type="box" size="0.015 0.015 0.015"
+            rgba="1 0.2 0.2 1" mass="0.02" friction="2 0.1 0.01"/>
+    </body>
+  </worldbody>
+</mujoco>
